@@ -1,41 +1,66 @@
+/* Base navbar styles */
 .navbar {
-    color: white;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  z-index: 1000;
+  color: white;
+}
+
+.navbar-logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+}
+
+/* Hamburger button */
+.hamburger {
+  display: none; /* hidden by default */
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Navigation links */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
   }
-  
-  .navbar-logo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 3rem;
-    font-weight: bold;
-    color: white;
-  }
-  
+
   .navbar-links {
-    list-style: none;
+    display: none;
+    flex-direction: column;
+    background-color: black;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .navbar-links.active {
     display: flex;
-    gap: 1.5rem;
-    margin: 0;
-    padding: 0;
   }
-  
-  .navbar-links a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-  }
-  
-  .navbar-links a:hover {
-    text-decoration: underline;
-  }
-  
+}

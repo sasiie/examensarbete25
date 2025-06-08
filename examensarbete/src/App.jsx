@@ -1,20 +1,23 @@
+import Layout from './Components/Layout';
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './Components/Navbar.jsx';
 import Home from './Pages/Home.jsx';
+import Contact from './Pages/Contact.jsx';
 import About from './Pages/About.jsx';
+import Rapport from './Pages/Rapport.jsx';
 
 function App() {
   return (
     <Router>
-      <Navbar />
-      <main style={{ padding: '2rem' }}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-        </Routes>
-      </main>
-    </Router>
+  <Routes>
+    <Route path="/" element={<Layout />}>
+      <Route index element={<Home />} />
+      <Route path="about" element={<About />} />
+      <Route path="rapport" element={<Rapport />} />
+      <Route path="contact" element={<Contact />} />
+    </Route>
+  </Routes>
+</Router>
   );
 }
 

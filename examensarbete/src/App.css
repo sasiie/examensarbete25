@@ -44,6 +44,7 @@
 body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   background-image: url('/Images/Background.jpg');
   background-size: cover;
   background-position: center;
@@ -52,3 +53,18 @@ body {
   font-family: sans-serif;
 }
 
+main {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 1rem;
+  }
+}
+.main-content {
+  padding: 2rem;
+  padding-top: 100px; /* prevent content being hidden under navbar */
+}
