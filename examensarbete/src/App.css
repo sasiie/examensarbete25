@@ -44,14 +44,14 @@
 body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  overflow-x: hidden;
   background-image: url('/Images/Background.jpg');
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
-  height: 100vh; /* Optional: makes it full height */
+  background-position: center;
   font-family: sans-serif;
 }
+
 
 main {
   padding: 2rem;
@@ -67,4 +67,13 @@ main {
 .main-content {
   padding: 2rem;
   padding-top: 100px; /* prevent content being hidden under navbar */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.section {
+  margin: 0;
+  padding: 0;
 }
