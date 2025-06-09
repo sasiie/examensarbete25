@@ -21,10 +21,8 @@ const handleSubmit = (e) => {
       setError("");
       setSuccess(true);
 
-      // Här kan du t.ex. skicka till ett API eller visa ett meddelande
       console.log("Formulär skickat:", { name, email, message });
 
-      // Nollställ formuläret
       setName("");
       setEmail("");
       setMessage("");

@@ -30,7 +30,7 @@
   .section.full-screen {
     position: relative;
     height: 100vh;
-    width: 100vw; /* full viewport width */
+    width: 100vw; 
     overflow: hidden;
   }
   
@@ -43,11 +43,13 @@
   
   .overlay-text {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    top: 20%;      
+  left: 5%; 
     transform: translate(-50%, -50%);
     color: white;
-    text-align: center;
+    text-align: left;
     padding: 1rem;
     z-index: 1;
   }

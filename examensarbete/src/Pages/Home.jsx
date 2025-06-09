@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import './Home.css'; // for custom styling
+import './Home.css'; 
 
 export default function Home() {
   return (
@@ -32,7 +32,7 @@ export default function Home() {
 </section>
 
 
-      {/* Another Section */}
+      {/*  Section nr 2 */}
       <section className="section info full-screen" id="info">
       <img src="/Images/hero3.jpg" alt="mat" className="hero-image" />
         <motion.div
